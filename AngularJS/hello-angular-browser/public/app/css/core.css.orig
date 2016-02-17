@@ -9,11 +9,9 @@
     border: 1px solid gray;
 }
 .item-title-container {
-    height:200px;
-    width:300px;
-    background-image:url(https://placekitten.com/g/260/260);
-    background-repeat: no-repeat;
-    background-position: center;
+    height:260px;
+    width:260px;
+    background-image:url(https://placekitten.com/g/260/260)
 }
 .item-title {
     position: absolute;
