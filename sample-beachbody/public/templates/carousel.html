@@ -7,7 +7,7 @@
     <section class="pt40 color2">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12 mb30 text-left">
+                <div id="owl-example" class="owl-carousel">
                     <h1>{title}</h1>
                     <h2>{program}</h2>
 			{#heroes}
@@ -29,3 +29,9 @@
 {/query}
 
 {/content}
+
+<SCRIPT>
+$(document).ready(function() {
+  $("#owl-example").owlCarousel();
+});
+</SCRIPT>
