@@ -2,9 +2,9 @@
 
 {<content}
 
-<div id="owl-example" class="owl-carousel">
 {@query type="bb:carousel" as="carousel"}
 {#carousel}
+	<div id="owl-example" class="owl-carousel">
                 <div>
                     <h1>{title}</h1>
                     <h2>{program}</h2>
@@ -20,14 +20,14 @@
 				{/content}
 			{/heroes}
                 </div>
+	</div>
 {/carousel}
 {/query}
-</div>
-
-{/content}
 
 <SCRIPT>
 $(document).ready(function() {
   $("#owl-example").owlCarousel();
 });
 </SCRIPT>
+
+{/content}
