@@ -10,11 +10,13 @@
                 <div class="col-md-12 mb30 text-center"  data-nekoanim="fadeInUp">
                     <h1>{carousel.title}</h1>
                     <h2>{carousel.program}</h2>
+{!
                     {@relatives type="bb:hero" node="{carousel._doc}" as="hero" direction="outgoing" sort="displayOrder"}
                     {#hero}
 			<h3>Hero item is {hero.title}</h3>
                     {/hero}
                     {/relatives}
+!}
                 </div>
             </div>
         </div>
