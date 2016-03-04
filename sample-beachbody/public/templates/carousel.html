@@ -12,10 +12,13 @@
                     <h1>{title}</h1>
                     <h2>{program}</h2>
 			{#heroes}
-				<h3>Hero item is {title}</h3>
+				<h3>{title}</h3>
 				{@content id="{id}" as="hero"}
 				{#hero}
-					Summary is {summary}
+					{summary}
+					{#image}
+						<img src="/preview/node/{id}/thumbnail_large?size=2650&mimetype=image/jpeg&force=true"/>
+					{/image}
 				{/hero}
 				{/content}
 			{/heroes}
