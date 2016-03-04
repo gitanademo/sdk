@@ -2,12 +2,10 @@
 
 {<content}
 
+<div id="owl-example" class="owl-carousel">
 {@query type="bb:carousel" as="carousel"}
 {#carousel}
-    <section class="pt40 color2">
-        <div class="container-fluid">
-            <div class="row">
-                <div id="owl-example" class="owl-carousel">
+                <div>
                     <h1>{title}</h1>
                     <h2>{program}</h2>
 			{#heroes}
@@ -22,11 +20,9 @@
 				{/content}
 			{/heroes}
                 </div>
-            </div>
-        </div>
-    </section>
 {/carousel}
 {/query}
+</div>
 
 {/content}
 
