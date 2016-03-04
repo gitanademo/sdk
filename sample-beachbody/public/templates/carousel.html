@@ -4,11 +4,11 @@
 
 {@query type="bb:carousel" as="carousel"}
 {#carousel}
+        <h1>{title}</h1>
+        <h2>{program}</h2>
 	<div id="owl-example" class="owl-carousel">
-                <div>
-                    <h1>{title}</h1>
-                    <h2>{program}</h2>
 			{#heroes}
+			<div>
 				<h3>{title}</h3>
 				{@content id="{id}" as="hero"}
 				{#hero}
@@ -18,16 +18,10 @@
 					{/image}
 				{/hero}
 				{/content}
+			</div>
 			{/heroes}
-                </div>
 	</div>
 {/carousel}
 {/query}
-
-<SCRIPT>
-$(document).ready(function() {
-  $("#owl-example").owlCarousel();
-});
-</SCRIPT>
 
 {/content}
