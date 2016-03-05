@@ -1,0 +1,18 @@
+{@queryOne type="bb:carousel" sort="priority" as="carousel"}
+{
+    "title": "{carousel.title}",
+    "program": "{carousel.program}",
+    "date_begin": "{carousel.date_begin}",
+	"items" : [
+		{#carousel.heroes}
+		{@content id="{id}" as="hero"}
+		{
+			"img": "/preview/node/{hero.image.id}/thumbnail_large?size=1024&mimetype=image/jpeg&force=true",
+			"summary" : "{hero.summary}"
+		}
+		{/content}
+		{@sep},{/sep}
+		{/carousel.heroes}
+	]
+}
+{/queryOne}
