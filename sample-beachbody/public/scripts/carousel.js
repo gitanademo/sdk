@@ -3,10 +3,12 @@ $(document).ready(function() {
     $("#owl-example").owlCarousel({
         jsonPath: '/carousel.json?mimetype=application/json&force=true',
         jsonSuccess: customDataSuccess,
-        navigation: true,
+        navigation: false,
         slideSpeed: 300,
         paginationSpeed: 400,
-        singleItem: true
+        singleItem: true,
+	autoPlay: 6000,
+	transitionStyle: "fade"
     });
 
     function customDataSuccess(data){

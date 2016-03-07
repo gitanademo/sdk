@@ -3,33 +3,6 @@
 {<content}
 
 	<div id="owl-example" class="owl-carousel">
-    </div>
-
-{!
-{@query type="bb:carousel" as="carousel"}
-{#carousel}
-        <h1>{title}</h1>
-        <h2>{program}</h2>
-	<div id="owl-example" class="owl-carousel">
-    </div>
-
-	<div>
-			{#heroes}
-			<div>
-				<h3>{title}</h3>
-				{@content id="{id}" as="hero"}
-				{#hero}
-					{summary}
-					{#image}
-						<img src="/preview/node/{id}/thumbnail_large?size=1024&mimetype=image/jpeg&force=true"/>
-					{/image}
-				{/hero}
-				{/content}
-			</div>
-			{/heroes}
 	</div>
-{/carousel}
-{/query}
-!}
 
 {/content}
