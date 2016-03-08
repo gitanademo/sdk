@@ -16,10 +16,16 @@ $(document).ready(function() {
         for(var i in data["items"]){
             var img = data["items"][i].img;
             var alt = data["items"][i].summary;
+            var promo = data["items"][i].promo;
 
-            content += "<img class=\"img-responsive\" src=\"" +img+ "\" alt=\"" +alt+ "\">"
+            content += "<div>";
+            content += "<img class=\"img-responsive\" src=\"" +img+ "\">";
+            content += "<h1>" +promo+ "</h1>";
+            content += "<h3>" +alt+ "</h3>";
+            content += "</div>";
         }
         $("#owl-example").html(content);
+        console.log(content);
     }
 
 });

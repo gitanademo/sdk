@@ -1569,6 +1569,23 @@ a#nextslide:hover, a#prevslide:hover {
 .owlCaption p {display:none;}
 .carouselWorksFullscreen img{ width: 100%}
 
+.owl-carousel div h1 {
+    position:relative;
+    top:-500px;
+    left:10px;
+    color:#FFF;
+    font-size:42px;
+}
+
+.owl-carousel div h3, .owl-carousel div .textoverlay{
+    position:relative;
+    top:-400px;
+    left:10px;
+    width:600px;
+    color:#FFF;
+    font-size:36px;
+}
+
 /*** camera ***/
 #cameraSliderWrapper{
 	overflow: hidden;

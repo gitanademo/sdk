@@ -7,8 +7,9 @@
 		{#carousel.heroes}
 		{@content id="{id}" as="hero"}
 		{
-			"img": "/preview/node/{hero.image.id}/thumbnail_large?size=1024&mimetype=image/jpeg",
-			"summary" : "{hero.summary}"
+			"img": "/preview/node/{hero.image.id}/thumbnail_large?size=1300&mimetype=image/jpeg&force=true",
+			"summary" : "{hero.summary}",
+			"promo" : "{hero.title}"
 		}
 		{/content}
 		{@sep},{/sep}
