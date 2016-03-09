@@ -1569,6 +1569,7 @@ a#nextslide:hover, a#prevslide:hover {
 .owlCaption p {display:none;}
 .carouselWorksFullscreen img{ width: 100%}
 
+@media (min-width:1024px) {
 .owl-carousel div h1 {
     position:relative;
     top:-500px;
@@ -1577,7 +1578,8 @@ a#nextslide:hover, a#prevslide:hover {
     font-size:42px;
 }
 
-.owl-carousel div h3, .owl-carousel div .textoverlay{
+@media (min-width:1024px) {
+.owl-carousel div h3, .owl-carousel div .textoverlay {
     position:relative;
     top:-400px;
     left:10px;
