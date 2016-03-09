@@ -7,7 +7,7 @@ $(document).ready(function() {
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,
-	autoPlay: 6000,
+	autoPlay: 5000,
 	transitionStyle: "fade"
     });
 
@@ -17,15 +17,17 @@ $(document).ready(function() {
             var img = data["items"][i].img;
             var alt = data["items"][i].summary;
             var promo = data["items"][i].promo;
+            var market = data["items"][i].market;
 
-            content += "<div>";
-            content += "<img class=\"img-responsive\" src=\"" +img+ "\">";
-            content += "<h1>" +promo+ "</h1>";
-            content += "<h3>" +alt+ "</h3>";
-            content += "</div>";
+            if (market) {
+              content += "<div>";
+              content += "<img class=\"img-responsive\" src=\"" +img+ "\">";
+              content += "<h1>" +promo+ "</h1>";
+              content += "<h3>" +alt+ "</h3>";
+              content += "</div>";
+            }
         }
         $("#owl-example").html(content);
-        console.log(content);
     }
 
 });

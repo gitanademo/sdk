@@ -9,7 +9,8 @@
 		{
 			"img": "/preview/node/{hero.image.id}/thumbnail_large?size=1300&mimetype=image/jpeg&force=true",
 			"summary" : "{hero.summary}",
-			"promo" : "{hero.title}"
+			"promo" : "{hero.title}",
+			"market": "{hero.market}"
 		}
 		{/content}
 		{@sep},{/sep}
