@@ -1,4 +1,4 @@
-{@queryOne type="bb:carousel" sort="priority" as="carousel"}
+{@queryOne type="bb:carousel" sort="date_begin" as="carousel"}
 {
     "title": "{carousel.title}",
     "program": "{carousel.program}",
