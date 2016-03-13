@@ -1,0 +1,31 @@
+{@layout path="front" /}
+
+{<content}
+
+{@query type="bb:carousel" as="carousel"}
+{#carousel}
+    <section class="pt40 color2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 mb30 text-left">
+                    <h1>{title}</h1>
+                    <h2>{program}</h2>
+			{#heroes}
+				<h3>{title}</h3>
+				{@content id="{id}" as="hero"}
+				{#hero}
+					{summary}
+					{#image}
+						<img src="/preview/node/{id}/thumbnail_large?size=1024&mimetype=image/jpeg&force=true"/>
+					{/image}
+				{/hero}
+				{/content}
+			{/heroes}
+                </div>
+            </div>
+        </div>
+    </section>
+{/carousel}
+{/query}
+
+{/content}
