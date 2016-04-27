@@ -1,0 +1,53 @@
+{@layout path="catalog" theme="blue"  /}
+
+{<content}
+
+<section id="content">
+    <header class="page-header mb30">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>
+                        <a href="/catalog/index.html">Product Catalog</a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="pt30 pb30">
+        <div class="container clearfix">
+            <div class="row">
+
+                <!-- items -->
+                <div class="portfolio-items clearfix imgHover neko-hover-1" id="3">
+
+                    {@queryOne type="bz:panelstrip" as="strip"}
+                    {#strip.panels}
+                    {@content id="{id}" as "panel"}
+                    <article class="col-sm-{panel.columns}">
+                        <div class="pinBox">
+                            <figure>
+                                <a href="#" title="link">
+                                    <img alt="{panel.title}" src="/preview/node/{panel.image.id}/thumbnail?width=326&mimetype=image/jpeg" class="img-responsive">
+                                </a>
+                            </figure>
+                            <section class="boxContent">
+                                <h3>{panel.title}</h3>
+                                <p>
+                                    {panel.description}
+                                </p>
+                            </section>
+                        </div>
+                    </article>
+                    {/content}
+                    {/strip.panels}
+                    {/queryOne}
+
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+{/content}
+
